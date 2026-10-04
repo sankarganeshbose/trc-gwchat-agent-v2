@@ -1,0 +1,14 @@
+# FastMCP TRC tool server -> AgentCore Runtime (MCP protocol: stateless streamable-HTTP on 0.0.0.0:8000/mcp), registered as an AgentCore Gateway target.
+FROM --platform=linux/arm64 python:3.12-slim
+ENV PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+WORKDIR /app
+COPY requirements-mcp.txt .
+RUN pip install -r requirements-mcp.txt
+COPY pyproject.toml .
+COPY src ./src
+RUN pip install --no-deps -e .
+# Private CA for on-prem TLS is mounted/baked by the platform team: TRC_MCP_CA_BUNDLE=/etc/ssl/guidewell/ca.pem
+RUN useradd -m app && chown -R app /app
+USER app
+EXPOSE 8000
+CMD ["opentelemetry-instrument", "python", "-m", "trc_mcp.server"]

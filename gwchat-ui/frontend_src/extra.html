@@ -1,0 +1,21 @@
+<div class="gw-scrim" id="gw-scrim" onclick="GW.closeOverlays()"></div>
+<div class="gw-dialog" id="settings-dialog" role="dialog" aria-label="Connection settings">
+  <h3>Connection settings</h3>
+  <p>Where this page sends your questions. The token is held by the server process and is never exposed to this page after you save it.</p>
+  <label for="set-url">Agent URL (AgentCore Runtime invocation URL)</label>
+  <input id="set-url" type="text" placeholder="http://localhost:8080/invocations" autocomplete="off">
+  <label for="set-token">Bearer token (optional locally)</label>
+  <input id="set-token" type="password" placeholder="leave blank to keep the current token" autocomplete="off">
+  <div class="row">
+    <span class="status" id="set-status"></span>
+    <button class="gw-btn" onclick="GW.settingsReset()" id="set-reset" title="Demo backend only: restore the stub on-prem data">Reset demo data</button>
+    <button class="gw-btn" onclick="GW.settingsTest()">Test</button>
+    <button class="gw-btn primary" onclick="GW.settingsSave()">Save</button>
+  </div>
+</div>
+<aside class="flow-drawer" id="flow-drawer" aria-label="Request flow">
+  <header><h3>How this answer was produced</h3><button class="fd-close" onclick="GW.closeOverlays()" aria-label="Close">×</button></header>
+  <div class="fd-body" id="fd-body"></div>
+  <div class="fd-foot"><span id="fd-meta" style="flex:1"></span></div>
+</aside>
+<div class="gw-toast" id="gw-toast"></div>

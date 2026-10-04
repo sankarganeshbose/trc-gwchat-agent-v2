@@ -1,0 +1,8 @@
+# MCP server container (AgentCore Runtime, MCP protocol). Pin to approved versions.
+aws-opentelemetry-distro
+fastmcp==3.4.7
+httpx==0.28.1
+mcp==1.30.0
+pydantic-settings==2.15.0
+pydantic==2.13.5
+structlog==26.1.0

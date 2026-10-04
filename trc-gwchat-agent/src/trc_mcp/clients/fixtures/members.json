@@ -1,0 +1,1358 @@
+[
+ {
+  "memberId": "HCC-4471829",
+  "uiId": "M001",
+  "name": "Dorothy Simmons",
+  "dob": "1948-03-12",
+  "age": 78,
+  "gender": "F",
+  "mrn": "MRN-88213",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-07-22T14:05:00",
+  "dischargeAt": "2026-07-27T10:40:00",
+  "facility": "Baptist Health Jacksonville",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "EMERGENCY",
+  "diagnosis": {
+   "code": "I50.9",
+   "description": "Heart failure, unspecified"
+  },
+  "disposition": "HOME_WITH_SERVICES",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "PROVIDER_NOTIFIED",
+   "followupDue": "2026-08-03",
+   "upload": {
+    "status": "NOT_UPLOADED"
+   },
+   "claim": {
+    "status": "NOT_FOUND"
+   }
+  },
+  "risk": {
+   "score": 0.83,
+   "tier": "HIGH",
+   "factors": [
+    "3 prior admissions in 12 months",
+    "Polypharmacy (11 active meds)",
+    "No confirmed follow-up scheduled",
+    "Lives alone / limited social support"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100200",
+   "status": "PENDING",
+   "channel": "FAX",
+   "sentAt": "2026-07-27T12:10:00",
+   "ackedAt": null,
+   "provider": {
+    "providerId": "PRV-1000",
+    "name": "Dr. Sarah Okafor, MD",
+    "specialty": "Geriatrics"
+   },
+   "response": "PENDING_RESPONSE"
+  },
+  "intervention": {
+   "status": "PLANNED",
+   "coordinator": "K. Alvarez, RN",
+   "dueDate": "2026-08-06",
+   "actions": [
+    "PCP follow-up overdue (due 08/03) \u2014 outreach to Dr. Okafor's office",
+    "Medication reconciliation call",
+    "No Provider Vista upload by day 3 \u2014 escalated"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-22T14:05:00",
+    "location": "ED-04 \u2192 MED-3B",
+    "detail": "Admit source: Ambulance. Attending: Dr. R. Kim.",
+    "rawHl7": "MSH|^~\\&|EPIC|BHJX|GWCHAT|GW|20260722140500||ADT^A01|MSG10041|P|2.5\\rEVN|A01|20260722140500\\rPID|1||MRN88213^^^BHJX||SIMMONS^DOROTHY||19480312|F\\rPV1|1|I|MED-3B^301^A^BHJX|9||KIM^ROBERT^^^DR|OKAFOR^SARAH^^^DR||CARD|||||||||V1001|||||20260722140500"
+   },
+   {
+    "type": "A02",
+    "label": "Transfer",
+    "occurredAt": "2026-07-23T08:15:00",
+    "location": "MED-3B \u2192 CARD-STEP-DOWN",
+    "detail": "Transferred to cardiac step-down for telemetry monitoring.",
+    "rawHl7": "MSH|^~\\&|EPIC|BHJX|GWCHAT|GW|20260723081500||ADT^A02|MSG10052|P|2.5\\rEVN|A02|20260723081500\\rPV1|1|I|CARD-SD^105^B^BHJX|||KIM^ROBERT^^^DR||CARD|"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-07-27T10:40:00",
+    "location": "CARD-STEP-DOWN",
+    "detail": "Disposition: Home with organized home health services.",
+    "rawHl7": "MSH|^~\\&|EPIC|BHJX|GWCHAT|GW|20260727104000||ADT^A03|MSG10098|P|2.5\\rEVN|A03|20260727104000\\rPV1|1|I|CARD-SD^105^B^BHJX|||KIM^ROBERT^^^DR||CARD||||||||||||||06|||||20260727104000"
+   }
+  ],
+  "priorAdmissions": [
+   {
+    "admitDate": "2026-04-02",
+    "dischargeDate": "2026-04-05",
+    "facility": "Baptist Health Jacksonville",
+    "diagnosis": {
+     "code": "I50.9",
+     "description": "Heart failure"
+    },
+    "disposition": "HOME",
+    "trcOutcome": "MRAT CLOSED"
+   },
+   {
+    "admitDate": "2026-01-18",
+    "dischargeDate": "2026-01-24",
+    "facility": "AdventHealth Orlando",
+    "diagnosis": {
+     "code": "I50.9",
+     "description": "Heart failure"
+    },
+    "disposition": "HOME_WITH_SERVICES",
+    "trcOutcome": "GAP \u2014 no PCP follow-up"
+   }
+  ],
+  "records": [
+   {
+    "attachmentId": "ATT-M001-1",
+    "name": "Discharge Summary \u2014 07/27/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-07-27",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M001-2",
+    "name": "CCDA \u2014 Transition of Care",
+    "type": "CCDA",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-07-27",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M001-3",
+    "name": "Cardiology Progress Note",
+    "type": "PROGRESS_NOTE",
+    "source": "EIP",
+    "date": "2026-07-24",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M001-4",
+    "name": "BNP Lab Result",
+    "type": "LAB_RESULT",
+    "source": "EIP",
+    "date": "2026-07-22",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Furosemide",
+    "dose": "40mg",
+    "frequency": "BID",
+    "indication": "Fluid management"
+   },
+   {
+    "name": "Metoprolol Succinate",
+    "dose": "50mg",
+    "frequency": "QD",
+    "indication": "Rate control"
+   },
+   {
+    "name": "Lisinopril",
+    "dose": "10mg",
+    "frequency": "QD",
+    "indication": "Afterload reduction"
+   }
+  ],
+  "followupRecommendations": [
+   "Cardiology follow-up within 7 days (not yet confirmed)",
+   "Home health nursing visit within 48 hrs",
+   "Daily weight monitoring log"
+  ]
+ },
+ {
+  "memberId": "HCC-2231087",
+  "uiId": "M002",
+  "name": "Marcus Webb",
+  "dob": "1965-11-02",
+  "age": 60,
+  "gender": "M",
+  "mrn": "MRN-55120",
+  "lineOfBusiness": "COMMERCIAL",
+  "admitAt": "2026-07-28T22:12:00",
+  "dischargeAt": "2026-08-01T09:20:00",
+  "facility": "Tampa General Hospital",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "EMERGENCY",
+  "diagnosis": {
+   "code": "J44.1",
+   "description": "COPD with acute exacerbation"
+  },
+  "disposition": "HOME",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "DISCHARGE_IDENTIFIED",
+   "followupDue": "2026-08-08",
+   "upload": {
+    "status": "NOT_UPLOADED"
+   },
+   "claim": {
+    "status": "PENDING"
+   }
+  },
+  "risk": {
+   "score": 0.71,
+   "tier": "HIGH",
+   "factors": [
+    "2 ED visits in past 30 days",
+    "Current smoker",
+    "O2 saturation <90% at discharge",
+    "No PCP visit in 12 months prior"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100201",
+   "status": "FAILED",
+   "channel": "FAX",
+   "sentAt": "2026-08-01T11:05:00",
+   "ackedAt": null,
+   "provider": {
+    "providerId": "PRV-1007",
+    "name": "Dr. James Patel, MD",
+    "specialty": "Internal Medicine"
+   },
+   "response": "NON_RESPONSIVE"
+  },
+  "intervention": {
+   "status": "IN_PROGRESS",
+   "coordinator": "T. Nguyen, RN",
+   "dueDate": "2026-08-05",
+   "actions": [
+    "Pulmonology referral",
+    "Smoking cessation counseling",
+    "Escalate fax failure \u2014 resend via Provider Proxy Task"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-28T22:12:00",
+    "location": "ED \u2192 MED-2A",
+    "detail": "Admit source: Emergency Department walk-in.",
+    "rawHl7": "MSH|^~\\&|CERNER|TGH|GWCHAT|GW|20260728221200||ADT^A01|MSG20031|P|2.5\\rEVN|A01|20260728221200\\rPV1|1|I|MED-2A^210^A^TGH|1||PATEL^JAMES^^^DR||PULM|"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-08-01T09:20:00",
+    "location": "MED-2A",
+    "detail": "Disposition: Home, self-care.",
+    "rawHl7": "MSH|^~\\&|CERNER|TGH|GWCHAT|GW|20260801092000||ADT^A03|MSG20077|P|2.5\\rEVN|A03|20260801092000\\rPV1|1|I|MED-2A^210^A^TGH|||PATEL^JAMES^^^DR||PULM||||||||||||||01|||||20260801092000"
+   }
+  ],
+  "priorAdmissions": [
+   {
+    "admitDate": "2025-12-11",
+    "dischargeDate": "2025-12-13",
+    "facility": "Tampa General Hospital",
+    "diagnosis": {
+     "code": "J44.1",
+     "description": "COPD exacerbation"
+    },
+    "disposition": "HOME",
+    "trcOutcome": "MRAT CLOSED"
+   }
+  ],
+  "records": [
+   {
+    "attachmentId": "ATT-M002-1",
+    "name": "Discharge Summary \u2014 08/01/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-08-01",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M002-2",
+    "name": "Pulmonary Function Test",
+    "type": "LAB_RESULT",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-07-29",
+    "status": "PARTIAL"
+   },
+   {
+    "attachmentId": "ATT-M002-3",
+    "name": "Chest X-Ray Report",
+    "type": "IMAGING_REPORT",
+    "source": "EIP",
+    "date": "2026-07-28",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Albuterol HFA",
+    "dose": "2 puffs",
+    "frequency": "Q4H PRN",
+    "indication": "Bronchospasm"
+   },
+   {
+    "name": "Prednisone",
+    "dose": "40mg taper",
+    "frequency": "QD x5d",
+    "indication": "Acute exacerbation"
+   },
+   {
+    "name": "Tiotropium",
+    "dose": "18mcg",
+    "frequency": "QD",
+    "indication": "Maintenance"
+   }
+  ],
+  "followupRecommendations": [
+   "Pulmonology follow-up within 7 days \u2014 not scheduled",
+   "Smoking cessation program referral pending"
+  ]
+ },
+ {
+  "memberId": "HCC-9903341",
+  "uiId": "M003",
+  "name": "Evelyn Ruiz",
+  "dob": "1952-06-19",
+  "age": 74,
+  "gender": "F",
+  "mrn": "MRN-71144",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-07-15T06:40:00",
+  "dischargeAt": "2026-07-19T15:00:00",
+  "facility": "Orlando Regional Medical Center",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "URGENT",
+  "diagnosis": {
+   "code": "E11.65",
+   "description": "Type 2 diabetes with hyperglycemia"
+  },
+  "disposition": "TRANSFERRED_TO_SNF",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "SOFT_CLOSED",
+   "followupDue": "2026-07-26",
+   "upload": {
+    "status": "UPLOADED",
+    "date": "2026-07-21"
+   },
+   "claim": {
+    "status": "MATCHED",
+    "date": "2026-07-22"
+   }
+  },
+  "risk": {
+   "score": 0.66,
+   "tier": "MEDIUM",
+   "factors": [
+    "SNF discharge",
+    "A1C 11.2% at admission",
+    "1 prior admission in 12 months"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100202",
+   "status": "ACKNOWLEDGED",
+   "channel": "PROVIDER_PROXY_TASK",
+   "sentAt": "2026-07-19T16:10:00",
+   "ackedAt": "2026-07-20T08:30:00",
+   "provider": {
+    "providerId": "PRV-1014",
+    "name": "Dr. Linda Torres, MD",
+    "specialty": "Internal Medicine"
+   },
+   "response": "APPOINTMENT_SCHEDULED"
+  },
+  "intervention": {
+   "status": "COMPLETED",
+   "coordinator": "M. Delgado, RN",
+   "dueDate": "2026-07-26",
+   "actions": [
+    "Diabetes educator visit completed",
+    "Med reconciliation completed"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-15T06:40:00",
+    "location": "ED \u2192 MED-1C",
+    "detail": "Admit source: Physician referral.",
+    "rawHl7": "MSH|^~\\&|MEDITECH|ORMC|GWCHAT|GW|20260715064000||ADT^A01|MSG30011|P|2.5\\rEVN|A01|20260715064000\\rPV1|1|I|MED-1C^114^C^ORMC|1||TORRES^LINDA^^^DR||ENDO|"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-07-19T15:00:00",
+    "location": "MED-1C",
+    "detail": "Disposition: Transferred to Skilled Nursing Facility.",
+    "rawHl7": "MSH|^~\\&|MEDITECH|ORMC|GWCHAT|GW|20260719150000||ADT^A03|MSG30098|P|2.5\\rEVN|A03|20260719150000\\rPV1|1|I|MED-1C^114^C^ORMC|||TORRES^LINDA^^^DR||ENDO||||||||||||||03|||||20260719150000"
+   }
+  ],
+  "priorAdmissions": [
+   {
+    "admitDate": "2026-03-01",
+    "dischargeDate": "2026-03-04",
+    "facility": "Orlando Regional Medical Center",
+    "diagnosis": {
+     "code": "E11.65",
+     "description": "Diabetes w/ hyperglycemia"
+    },
+    "disposition": "HOME",
+    "trcOutcome": "MRAT CLOSED"
+   }
+  ],
+  "records": [
+   {
+    "attachmentId": "ATT-M003-1",
+    "name": "Discharge Summary \u2014 07/19/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-07-19",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M003-2",
+    "name": "CCDA \u2014 SNF Transfer Packet",
+    "type": "CCDA",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-07-19",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M003-3",
+    "name": "A1C Lab Panel",
+    "type": "LAB_RESULT",
+    "source": "EIP",
+    "date": "2026-07-15",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M003-4",
+    "name": "PCP Visit Note \u2014 Med Reconciliation",
+    "type": "PROGRESS_NOTE",
+    "source": "PROVIDER_VISTA",
+    "date": "2026-07-21",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Insulin Glargine",
+    "dose": "24 units",
+    "frequency": "QHS",
+    "indication": "Glycemic control"
+   },
+   {
+    "name": "Metformin",
+    "dose": "1000mg",
+    "frequency": "BID",
+    "indication": "Glycemic control"
+   }
+  ],
+  "followupRecommendations": [
+   "Endocrinology follow-up within 14 days \u2014 completed",
+   "SNF case manager assigned via JIVA"
+  ]
+ },
+ {
+  "memberId": "HCC-1187765",
+  "uiId": "M004",
+  "name": "Harold Jennings",
+  "dob": "1958-09-30",
+  "age": 67,
+  "gender": "M",
+  "mrn": "MRN-33871",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-07-30T03:22:00",
+  "dischargeAt": "2026-08-03T11:15:00",
+  "facility": "UF Health Shands Hospital",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "EMERGENCY",
+  "diagnosis": {
+   "code": "A41.9",
+   "description": "Sepsis, unspecified organism"
+  },
+  "disposition": "HOME_WITH_SERVICES",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "PROVIDER_NOTIFIED",
+   "followupDue": "2026-08-10",
+   "upload": {
+    "status": "NOT_UPLOADED"
+   },
+   "claim": {
+    "status": "PENDING"
+   }
+  },
+  "risk": {
+   "score": 0.79,
+   "tier": "HIGH",
+   "factors": [
+    "Sepsis diagnosis (high preventability class)",
+    "Recent SNF stay in past 60 days",
+    "Kidney function decline (eGFR 38)"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100203",
+   "status": "SENT",
+   "channel": "EMAIL",
+   "sentAt": "2026-08-03T13:00:00",
+   "ackedAt": null,
+   "provider": {
+    "providerId": "PRV-1007",
+    "name": "Dr. James Patel, MD",
+    "specialty": "Internal Medicine"
+   },
+   "response": "PENDING_RESPONSE"
+  },
+  "intervention": {
+   "status": "PLANNED",
+   "coordinator": "K. Alvarez, RN",
+   "dueDate": "2026-08-08",
+   "actions": [
+    "Home health referral",
+    "72-hr nurse check-in call"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-30T03:22:00",
+    "location": "ED \u2192 ICU-2",
+    "detail": "Admit source: Ambulance, sepsis protocol activated.",
+    "rawHl7": "MSH|^~\\&|EPIC|UFHS|GWCHAT|GW|20260730032200||ADT^A01|MSG40010|P|2.5"
+   },
+   {
+    "type": "A02",
+    "label": "Transfer",
+    "occurredAt": "2026-07-31T19:40:00",
+    "location": "ICU-2 \u2192 MED-4B",
+    "detail": "Stepped down from ICU after stabilization.",
+    "rawHl7": "MSH|^~\\&|EPIC|UFHS|GWCHAT|GW|20260731194000||ADT^A02|MSG40044|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-08-03T11:15:00",
+    "location": "MED-4B",
+    "detail": "Disposition: Home with organized home health services.",
+    "rawHl7": "MSH|^~\\&|EPIC|UFHS|GWCHAT|GW|20260803111500||ADT^A03|MSG40090|P|2.5"
+   }
+  ],
+  "priorAdmissions": [],
+  "records": [
+   {
+    "attachmentId": "ATT-M004-1",
+    "name": "Discharge Summary \u2014 08/03/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-08-03",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M004-2",
+    "name": "Blood Culture Results",
+    "type": "LAB_RESULT",
+    "source": "EIP",
+    "date": "2026-07-30",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Cefpodoxime",
+    "dose": "200mg",
+    "frequency": "BID x7d",
+    "indication": "Post-sepsis antibiotic course"
+   },
+   {
+    "name": "Enoxaparin",
+    "dose": "40mg",
+    "frequency": "QD",
+    "indication": "DVT prophylaxis"
+   }
+  ],
+  "followupRecommendations": [
+   "PCP follow-up within 7 days \u2014 pending scheduling",
+   "Home health nursing within 48 hrs"
+  ]
+ },
+ {
+  "memberId": "HCC-6650092",
+  "uiId": "M005",
+  "name": "Patricia Nguyen",
+  "dob": "1970-01-25",
+  "age": 56,
+  "gender": "F",
+  "mrn": "MRN-90256",
+  "lineOfBusiness": "COMMERCIAL",
+  "admitAt": "2026-07-10T17:50:00",
+  "dischargeAt": "2026-07-11T12:00:00",
+  "facility": "Memorial Hospital Miramar",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "URGENT",
+  "diagnosis": {
+   "code": "K92.2",
+   "description": "GI hemorrhage, unspecified"
+  },
+  "disposition": "HOME",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "MRAT_CLOSED",
+   "followupDue": "2026-07-18",
+   "upload": {
+    "status": "UPLOADED",
+    "date": "2026-07-13"
+   },
+   "claim": {
+    "status": "MATCHED",
+    "date": "2026-07-14"
+   }
+  },
+  "risk": {
+   "score": 0.28,
+   "tier": "LOW",
+   "factors": [
+    "Short length of stay",
+    "No prior admissions",
+    "Stable at discharge"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100204",
+   "status": "ACKNOWLEDGED",
+   "channel": "FAX",
+   "sentAt": "2026-07-11T13:20:00",
+   "ackedAt": "2026-07-11T15:05:00",
+   "provider": {
+    "providerId": "PRV-1021",
+    "name": "Dr. Maria Chen, MD",
+    "specialty": "Family Medicine"
+   },
+   "response": "APPOINTMENT_CONFIRMED"
+  },
+  "intervention": {
+   "status": "COMPLETED",
+   "coordinator": "\u2014",
+   "dueDate": "\u2014",
+   "actions": [
+    "Routine follow-up only \u2014 no elevated risk"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-10T17:50:00",
+    "location": "ED \u2192 OBS-1",
+    "detail": "Observation stay for GI bleed workup.",
+    "rawHl7": "MSH|^~\\&|EPIC|MHM|GWCHAT|GW|20260710175000||ADT^A01|MSG50002|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-07-11T12:00:00",
+    "location": "OBS-1",
+    "detail": "Disposition: Home, self-care. Hgb stable.",
+    "rawHl7": "MSH|^~\\&|EPIC|MHM|GWCHAT|GW|20260711120000||ADT^A03|MSG50030|P|2.5"
+   }
+  ],
+  "priorAdmissions": [],
+  "records": [
+   {
+    "attachmentId": "ATT-M005-1",
+    "name": "Discharge Summary \u2014 07/11/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-07-11",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M005-2",
+    "name": "EGD Procedure Note",
+    "type": "PROGRESS_NOTE",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-07-11",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M005-3",
+    "name": "PCP Follow-up Visit Note",
+    "type": "PROGRESS_NOTE",
+    "source": "PROVIDER_VISTA",
+    "date": "2026-07-13",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Pantoprazole",
+    "dose": "40mg",
+    "frequency": "BID",
+    "indication": "GI bleed management"
+   }
+  ],
+  "followupRecommendations": [
+   "GI follow-up within 14 days \u2014 confirmed 07/24"
+  ]
+ },
+ {
+  "memberId": "HCC-3345510",
+  "uiId": "M006",
+  "name": "Walter Osei",
+  "dob": "1944-12-08",
+  "age": 81,
+  "gender": "M",
+  "mrn": "MRN-12098",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-07-25T09:00:00",
+  "dischargeAt": "2026-07-30T16:45:00",
+  "facility": "AdventHealth Orlando",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "EMERGENCY",
+  "diagnosis": {
+   "code": "I63.9",
+   "description": "Cerebral infarction, unspecified"
+  },
+  "disposition": "TRANSFERRED_TO_REHAB",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "VALIDATION_PASSED",
+   "followupDue": "2026-08-06",
+   "upload": {
+    "status": "UPLOADED",
+    "date": "2026-08-01"
+   },
+   "claim": {
+    "status": "MATCHED",
+    "date": "2026-08-02"
+   }
+  },
+  "risk": {
+   "score": 0.58,
+   "tier": "MEDIUM",
+   "factors": [
+    "First stroke admission",
+    "Rehab discharge",
+    "Lives with spouse (caregiver support present)"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100205",
+   "status": "SENT",
+   "channel": "PROVIDER_PROXY_TASK",
+   "sentAt": "2026-07-30T17:30:00",
+   "ackedAt": null,
+   "provider": {
+    "providerId": "PRV-1028",
+    "name": "Dr. Robert Kim, MD",
+    "specialty": "Cardiology"
+   },
+   "response": "PENDING_RESPONSE"
+  },
+  "intervention": {
+   "status": "IN_PROGRESS",
+   "coordinator": "T. Nguyen, RN",
+   "dueDate": "2026-08-09",
+   "actions": [
+    "Neurology follow-up scheduling",
+    "Fall-risk home assessment"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-25T09:00:00",
+    "location": "ED \u2192 NEURO-ICU",
+    "detail": "Admit source: Ambulance, stroke alert.",
+    "rawHl7": "MSH|^~\\&|CERNER|AHO|GWCHAT|GW|20260725090000||ADT^A01|MSG60001|P|2.5"
+   },
+   {
+    "type": "A02",
+    "label": "Transfer",
+    "occurredAt": "2026-07-27T12:00:00",
+    "location": "NEURO-ICU \u2192 NEURO-STEPDOWN",
+    "detail": "Stable, moved to step-down unit.",
+    "rawHl7": "MSH|^~\\&|CERNER|AHO|GWCHAT|GW|20260727120000||ADT^A02|MSG60022|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-07-30T16:45:00",
+    "location": "NEURO-STEPDOWN",
+    "detail": "Disposition: Transferred to inpatient rehabilitation facility.",
+    "rawHl7": "MSH|^~\\&|CERNER|AHO|GWCHAT|GW|20260730164500||ADT^A03|MSG60055|P|2.5"
+   }
+  ],
+  "priorAdmissions": [],
+  "records": [
+   {
+    "attachmentId": "ATT-M006-1",
+    "name": "Discharge Summary \u2014 07/30/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-07-30",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M006-2",
+    "name": "CT Head w/o Contrast",
+    "type": "IMAGING_REPORT",
+    "source": "EIP",
+    "date": "2026-07-25",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M006-3",
+    "name": "CCDA \u2014 Rehab Transfer",
+    "type": "CCDA",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-07-30",
+    "status": "PARTIAL"
+   },
+   {
+    "attachmentId": "ATT-M006-4",
+    "name": "Provider Discharge Info Receipt",
+    "type": "PROGRESS_NOTE",
+    "source": "PROVIDER_VISTA",
+    "date": "2026-08-01",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Atorvastatin",
+    "dose": "80mg",
+    "frequency": "QHS",
+    "indication": "Secondary stroke prevention"
+   },
+   {
+    "name": "Clopidogrel",
+    "dose": "75mg",
+    "frequency": "QD",
+    "indication": "Antiplatelet therapy"
+   }
+  ],
+  "followupRecommendations": [
+   "Neurology follow-up within 30 days \u2014 pending",
+   "Physical/occupational therapy at rehab facility"
+  ]
+ },
+ {
+  "memberId": "HCC-7789234",
+  "uiId": "M007",
+  "name": "Brenda Castillo",
+  "dob": "1961-04-17",
+  "age": 65,
+  "gender": "F",
+  "mrn": "MRN-44502",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-07-05T20:10:00",
+  "dischargeAt": "2026-07-09T09:30:00",
+  "facility": "Mayo Clinic Florida",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "EMERGENCY",
+  "diagnosis": {
+   "code": "J18.9",
+   "description": "Pneumonia, unspecified organism"
+  },
+  "disposition": "HOME",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "SOFT_CLOSED",
+   "followupDue": "2026-07-16",
+   "upload": {
+    "status": "UPLOADED",
+    "date": "2026-07-11"
+   },
+   "claim": {
+    "status": "MATCHED",
+    "date": "2026-07-12"
+   }
+  },
+  "risk": {
+   "score": 0.74,
+   "tier": "HIGH",
+   "factors": [
+    "COPD comorbidity",
+    "No home health ordered at discharge",
+    "2 ED visits in past 90 days"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100206",
+   "status": "ACKNOWLEDGED",
+   "channel": "FAX",
+   "sentAt": "2026-07-09T10:00:00",
+   "ackedAt": "2026-07-09T14:22:00",
+   "provider": {
+    "providerId": "PRV-1000",
+    "name": "Dr. Sarah Okafor, MD",
+    "specialty": "Geriatrics"
+   },
+   "response": "APPOINTMENT_SCHEDULED"
+  },
+  "intervention": {
+   "status": "COMPLETED",
+   "coordinator": "M. Delgado, RN",
+   "dueDate": "2026-07-16",
+   "actions": [
+    "PCP follow-up visit completed 07/11",
+    "Medication reconciliation documented by PCP"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-05T20:10:00",
+    "location": "ED \u2192 MED-2C",
+    "detail": "Admit source: ED, community-acquired pneumonia.",
+    "rawHl7": "MSH|^~\\&|EPIC|MAYO|GWCHAT|GW|20260705201000||ADT^A01|MSG70001|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-07-09T09:30:00",
+    "location": "MED-2C",
+    "detail": "Disposition: Home, self-care.",
+    "rawHl7": "MSH|^~\\&|EPIC|MAYO|GWCHAT|GW|20260709093000||ADT^A03|MSG70040|P|2.5"
+   }
+  ],
+  "priorAdmissions": [
+   {
+    "admitDate": "2026-02-14",
+    "dischargeDate": "2026-02-17",
+    "facility": "Mayo Clinic Florida",
+    "diagnosis": {
+     "code": "J44.1",
+     "description": "COPD exacerbation"
+    },
+    "disposition": "HOME",
+    "trcOutcome": "MRAT CLOSED"
+   }
+  ],
+  "records": [
+   {
+    "attachmentId": "ATT-M007-1",
+    "name": "Discharge Summary \u2014 07/09/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-07-09",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M007-2",
+    "name": "PCP Follow-up Visit Note",
+    "type": "PROGRESS_NOTE",
+    "source": "PROVIDER_VISTA",
+    "date": "2026-07-11",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M007-3",
+    "name": "Chest X-Ray Report",
+    "type": "IMAGING_REPORT",
+    "source": "EIP",
+    "date": "2026-07-05",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Amoxicillin-Clavulanate",
+    "dose": "875mg",
+    "frequency": "BID x7d",
+    "indication": "CAP treatment"
+   },
+   {
+    "name": "Albuterol HFA",
+    "dose": "2 puffs",
+    "frequency": "Q4H PRN",
+    "indication": "COPD/bronchospasm"
+   }
+  ],
+  "followupRecommendations": [
+   "PCP follow-up within 7 days \u2014 completed 07/11"
+  ]
+ },
+ {
+  "memberId": "HCC-5512908",
+  "uiId": "M008",
+  "name": "Robert Alston",
+  "dob": "1955-08-02",
+  "age": 70,
+  "gender": "M",
+  "mrn": "MRN-26671",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-08-01T11:30:00",
+  "dischargeAt": "2026-08-04T10:00:00",
+  "facility": "Baptist Health Jacksonville",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "URGENT",
+  "diagnosis": {
+   "code": "N18.6",
+   "description": "End stage renal disease"
+  },
+  "disposition": "TRANSFERRED_TO_SNF",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "PROVIDER_NOTIFIED",
+   "followupDue": "2026-08-11",
+   "upload": {
+    "status": "NOT_UPLOADED"
+   },
+   "claim": {
+    "status": "PENDING"
+   }
+  },
+  "risk": {
+   "score": 0.69,
+   "tier": "MEDIUM",
+   "factors": [
+    "Dialysis-dependent",
+    "SNF discharge",
+    "3 comorbid chronic conditions"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100207",
+   "status": "PENDING",
+   "channel": "FAX",
+   "sentAt": "2026-08-04T12:00:00",
+   "ackedAt": null,
+   "provider": {
+    "providerId": "PRV-1028",
+    "name": "Dr. Robert Kim, MD",
+    "specialty": "Cardiology"
+   },
+   "response": "PENDING_RESPONSE"
+  },
+  "intervention": {
+   "status": "PLANNED",
+   "coordinator": "K. Alvarez, RN",
+   "dueDate": "2026-08-11",
+   "actions": [
+    "JIVA case management episode opened",
+    "Dialysis schedule confirmation"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-08-01T11:30:00",
+    "location": "ED \u2192 MED-1A",
+    "detail": "Admit source: Transfer from dialysis center.",
+    "rawHl7": "MSH|^~\\&|EPIC|BHJX|GWCHAT|GW|20260801113000||ADT^A01|MSG80005|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-08-04T10:00:00",
+    "location": "MED-1A",
+    "detail": "Disposition: Transferred to Skilled Nursing Facility.",
+    "rawHl7": "MSH|^~\\&|EPIC|BHJX|GWCHAT|GW|20260804100000||ADT^A03|MSG80041|P|2.5"
+   }
+  ],
+  "priorAdmissions": [],
+  "records": [
+   {
+    "attachmentId": "ATT-M008-1",
+    "name": "Discharge Summary \u2014 08/04/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-08-04",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M008-2",
+    "name": "Nephrology Consult Note",
+    "type": "PROGRESS_NOTE",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-08-02",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Sevelamer",
+    "dose": "800mg",
+    "frequency": "TID w/ meals",
+    "indication": "Phosphate binder"
+   },
+   {
+    "name": "Epoetin Alfa",
+    "dose": "per protocol",
+    "frequency": "3x/week",
+    "indication": "Anemia of CKD"
+   }
+  ],
+  "followupRecommendations": [
+   "Nephrology follow-up within 14 days \u2014 pending",
+   "JIVA case manager assigned"
+  ]
+ },
+ {
+  "memberId": "HCC-8842217",
+  "uiId": "M009",
+  "name": "Susan Whitfield",
+  "dob": "1963-02-28",
+  "age": 63,
+  "gender": "F",
+  "mrn": "MRN-60123",
+  "lineOfBusiness": "COMMERCIAL",
+  "admitAt": "2026-06-28T08:00:00",
+  "dischargeAt": "2026-06-28T18:00:00",
+  "facility": "Tampa General Hospital",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "SCHEDULED",
+  "diagnosis": {
+   "code": "Z98.89",
+   "description": "Planned surgical procedure (knee arthroplasty)"
+  },
+  "disposition": "HOME",
+  "eligibility": {
+   "status": "ELIGIBLE",
+   "reason": null
+  },
+  "trc": {
+   "status": "MRAT_CLOSED",
+   "followupDue": "2026-07-05",
+   "upload": {
+    "status": "UPLOADED",
+    "date": "2026-06-30"
+   },
+   "claim": {
+    "status": "MATCHED",
+    "date": "2026-07-01"
+   }
+  },
+  "risk": {
+   "score": 0.12,
+   "tier": "LOW",
+   "factors": [
+    "Planned procedure",
+    "No prior admissions",
+    "Stable at discharge"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100208",
+   "status": "ACKNOWLEDGED",
+   "channel": "EMAIL",
+   "sentAt": "2026-06-28T19:00:00",
+   "ackedAt": "2026-06-29T08:00:00",
+   "provider": {
+    "providerId": "PRV-1021",
+    "name": "Dr. Maria Chen, MD",
+    "specialty": "Family Medicine"
+   },
+   "response": "APPOINTMENT_CONFIRMED"
+  },
+  "intervention": {
+   "status": "COMPLETED",
+   "coordinator": "\u2014",
+   "dueDate": "\u2014",
+   "actions": [
+    "Routine follow-up only \u2014 no elevated risk"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-06-28T08:00:00",
+    "location": "PRE-OP \u2192 OR-4",
+    "detail": "Scheduled admission for elective total knee arthroplasty.",
+    "rawHl7": "MSH|^~\\&|EPIC|TGH|GWCHAT|GW|20260628080000||ADT^A01|MSG90001|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-06-28T18:00:00",
+    "location": "PACU",
+    "detail": "Same-day discharge, disposition Home.",
+    "rawHl7": "MSH|^~\\&|EPIC|TGH|GWCHAT|GW|20260628180000||ADT^A03|MSG90015|P|2.5"
+   }
+  ],
+  "priorAdmissions": [],
+  "records": [
+   {
+    "attachmentId": "ATT-M009-1",
+    "name": "Operative Report",
+    "type": "PROGRESS_NOTE",
+    "source": "EIP",
+    "date": "2026-06-28",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M009-2",
+    "name": "Discharge Summary \u2014 06/28/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-06-28",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M009-3",
+    "name": "PCP Visit Note \u2014 Med Reconciliation",
+    "type": "PROGRESS_NOTE",
+    "source": "PROVIDER_VISTA",
+    "date": "2026-06-30",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [
+   {
+    "name": "Oxycodone",
+    "dose": "5mg",
+    "frequency": "Q6H PRN",
+    "indication": "Post-surgical pain"
+   }
+  ],
+  "followupRecommendations": [
+   "Orthopedic follow-up within 14 days \u2014 confirmed"
+  ]
+ },
+ {
+  "memberId": "HCC-2298871",
+  "uiId": "M010",
+  "name": "George Papadopoulos",
+  "dob": "1949-10-05",
+  "age": 76,
+  "gender": "M",
+  "mrn": "MRN-77890",
+  "lineOfBusiness": "MEDICARE",
+  "admitAt": "2026-07-19T04:30:00",
+  "dischargeAt": "2026-07-21T09:00:00",
+  "facility": "Orlando Regional Medical Center",
+  "facilityType": "ACUTE_CARE",
+  "admissionType": "EMERGENCY",
+  "diagnosis": {
+   "code": "I21.4",
+   "description": "Non-ST elevation myocardial infarction"
+  },
+  "disposition": "EXPIRED",
+  "eligibility": {
+   "status": "INELIGIBLE",
+   "reason": "Discharge disposition: EXPIRED (excluded per TRC spec \u2014 member deceased)"
+  },
+  "trc": {
+   "status": "EXCLUDED",
+   "followupDue": "\u2014",
+   "upload": {
+    "status": "N/A"
+   },
+   "claim": {
+    "status": "N/A"
+   }
+  },
+  "risk": {
+   "score": 0,
+   "tier": "LOW",
+   "factors": [
+    "Excluded from measure \u2014 deceased during admission"
+   ]
+  },
+  "notification": {
+   "notificationId": "NTF-100209",
+   "status": "ACKNOWLEDGED",
+   "channel": "FAX",
+   "sentAt": "2026-07-21T10:00:00",
+   "ackedAt": "2026-07-21T10:45:00",
+   "provider": {
+    "providerId": "PRV-1028",
+    "name": "Dr. Robert Kim, MD",
+    "specialty": "Cardiology"
+   },
+   "response": "APPOINTMENT_CONFIRMED"
+  },
+  "intervention": {
+   "status": "COMPLETED",
+   "coordinator": "\u2014",
+   "dueDate": "\u2014",
+   "actions": [
+    "Not applicable \u2014 deceased"
+   ]
+  },
+  "adtEvents": [
+   {
+    "type": "A01",
+    "label": "Admit / Visit Notification",
+    "occurredAt": "2026-07-19T04:30:00",
+    "location": "ED \u2192 CCU",
+    "detail": "Admit source: Ambulance, STEMI protocol.",
+    "rawHl7": "MSH|^~\\&|MEDITECH|ORMC|GWCHAT|GW|20260719043000||ADT^A01|MSG10501|P|2.5"
+   },
+   {
+    "type": "A03",
+    "label": "Discharge / End Visit",
+    "occurredAt": "2026-07-21T09:00:00",
+    "location": "CCU",
+    "detail": "Disposition: Expired. Date/time of death recorded and PCP notified.",
+    "rawHl7": "MSH|^~\\&|MEDITECH|ORMC|GWCHAT|GW|20260721090000||ADT^A03|MSG10540|P|2.5"
+   }
+  ],
+  "priorAdmissions": [],
+  "records": [
+   {
+    "attachmentId": "ATT-M010-1",
+    "name": "Discharge Summary \u2014 07/21/2026",
+    "type": "DISCHARGE_SUMMARY",
+    "source": "EIP",
+    "date": "2026-07-21",
+    "status": "COMPLETE"
+   },
+   {
+    "attachmentId": "ATT-M010-2",
+    "name": "Cardiac Catheterization Report",
+    "type": "PROGRESS_NOTE",
+    "source": "CONTENT_CENTRAL",
+    "date": "2026-07-19",
+    "status": "COMPLETE"
+   }
+  ],
+  "medications": [],
+  "followupRecommendations": [
+   "N/A \u2014 PCP notified of date of death"
+  ]
+ }
+]

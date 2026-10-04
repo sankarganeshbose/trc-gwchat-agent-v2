@@ -1,0 +1,7 @@
+# UI + the local demo backend (runs the REAL agent + REAL FastMCP server from ../trc-gwchat-agent with a keyword-routed stand-in for the LLM)
+-r requirements.txt
+-e ../trc-gwchat-agent[agent,mcp]
+uvicorn>=0.30
+starlette>=0.40
+pytest>=8
+pytest-asyncio>=0.23

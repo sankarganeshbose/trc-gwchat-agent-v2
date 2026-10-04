@@ -1,0 +1,7 @@
+# Dev/test convenience (everything). Deployables use requirements-agent.txt / requirements-mcp.txt.
+-r requirements-agent.txt
+fastmcp==3.4.7
+pytest>=8
+pytest-asyncio>=0.23
+respx>=0.21
+ruff>=0.5

@@ -1,0 +1,4 @@
+# UI only (talks HTTP to any agent endpoint)
+streamlit>=1.50
+httpx>=0.27
+pandas>=2.0

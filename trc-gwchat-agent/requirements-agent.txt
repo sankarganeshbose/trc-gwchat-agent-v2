@@ -1,0 +1,9 @@
+# Agent container (AgentCore Runtime, HTTP protocol). Pin to the versions approved for the GuideWell AWS environment.
+aws-opentelemetry-distro
+bedrock-agentcore==1.24.0
+httpx==0.28.1
+mcp==1.30.0
+pydantic-settings==2.15.0
+pydantic==2.13.5
+strands-agents==1.57.2
+structlog==26.1.0

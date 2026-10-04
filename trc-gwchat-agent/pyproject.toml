@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trc-gwchat-agent"
+version = "0.1.0"
+description = "GWChat Integration Agent (Strands) + FastMCP TRC tool server for AWS Bedrock AgentCore"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "httpx>=0.27",
+  "structlog>=24.1",
+]
+
+[project.optional-dependencies]
+# Deployed to AgentCore Runtime as the *MCP server* container (behind AgentCore Gateway)
+mcp = ["fastmcp>=3.4,<4"]
+# Deployed to AgentCore Runtime as the *agent* container
+agent = ["strands-agents>=1.50", "bedrock-agentcore>=1.20", "mcp>=1.20"]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "respx>=0.21", "ruff>=0.5", "mypy>=1.10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+trc_mcp = ["clients/fixtures/*.json"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
